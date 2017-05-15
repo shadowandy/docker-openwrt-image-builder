@@ -1,5 +1,5 @@
 FROM       ubuntu:14.04
-MAINTAINER Lim Cheng Yee "https://github.com/shadowandy"
+MAINTAINER Lim Cheng Yee "https://github.com/shadowandy/docker-openwrt-image-builder"
 
 # Setting up essential packages
 
