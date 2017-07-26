@@ -30,7 +30,7 @@ RUN	mkdir /var/run/sshd \
 	
 RUN mkdir -p /builder/openwrt \
 	&& cd /builder/openwrt \
-	&& wget https://downloads.openwrt.org/chaos_calmer/15.05.1/ar71xx/generic/OpenWrt-ImageBuilder-15.05.1-ar71xx-generic.Linux-x86_64.tar.bz2 \
+	&& wget --no-check-certificate  https://downloads.openwrt.org/chaos_calmer/15.05.1/ar71xx/generic/OpenWrt-ImageBuilder-15.05.1-ar71xx-generic.Linux-x86_64.tar.bz2 \
 	&& tar -xvjf OpenWrt-ImageBuilder-15.05.1-ar71xx-generic.Linux-x86_64.tar.bz2 \
 	&& mv OpenWrt-ImageBuilder-15.05.1-ar71xx-generic.Linux-x86_64 chaos_calmer
 
