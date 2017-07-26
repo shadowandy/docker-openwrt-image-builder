@@ -34,6 +34,10 @@ RUN mkdir -p /builder/openwrt \
 	&& tar -xvjf OpenWrt-ImageBuilder-15.05.1-ar71xx-generic.Linux-x86_64.tar.bz2 \
 	&& mv OpenWrt-ImageBuilder-15.05.1-ar71xx-generic.Linux-x86_64 chaos_calmer
 
+RUN mkdir -p /builder/openwrt/files
+VOLUME /builder/openwrt/files
+VOLUME /builder/openwrt/openwrt/bin
+
 RUN chown -R builder /builder
 
 EXPOSE 22
