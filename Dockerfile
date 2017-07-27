@@ -36,7 +36,7 @@ RUN mkdir -p /builder/openwrt \
 
 RUN mkdir -p /builder/openwrt/files
 VOLUME /builder/openwrt/files
-VOLUME /builder/openwrt/openwrt/bin
+VOLUME /builder/openwrt/chaos_calmer/bin
 
 RUN chown -R builder /builder
 
